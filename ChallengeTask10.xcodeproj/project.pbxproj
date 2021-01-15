@@ -13,6 +13,7 @@
 		D645F35725B1B6F600C82417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D645F35525B1B6F600C82417 /* Main.storyboard */; };
 		D645F35925B1B6F800C82417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D645F35825B1B6F800C82417 /* Assets.xcassets */; };
 		D645F35C25B1B6F800C82417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D645F35A25B1B6F800C82417 /* LaunchScreen.storyboard */; };
+		D645F36525B1B74000C82417 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645F36425B1B74000C82417 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D645F35825B1B6F800C82417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D645F35B25B1B6F800C82417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D645F35D25B1B6F800C82417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D645F36425B1B74000C82417 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D645F34F25B1B6F600C82417 /* AppDelegate.swift */,
 				D645F35125B1B6F600C82417 /* SceneDelegate.swift */,
 				D645F35325B1B6F600C82417 /* ViewController.swift */,
+				D645F36425B1B74000C82417 /* TableViewController.swift */,
 				D645F35525B1B6F600C82417 /* Main.storyboard */,
 				D645F35825B1B6F800C82417 /* Assets.xcassets */,
 				D645F35A25B1B6F800C82417 /* LaunchScreen.storyboard */,
@@ -77,6 +80,7 @@
 				D645F34825B1B6F600C82417 /* Sources */,
 				D645F34925B1B6F600C82417 /* Frameworks */,
 				D645F34A25B1B6F600C82417 /* Resources */,
+				D637729525B1DEA000DC2DEE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,6 +136,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D637729525B1DEA000DC2DEE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which mint >/dev/null; then\n  mint run swiftlint swiftlint autocorrect --format\n  mint run swiftlint swiftlint\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D645F34825B1B6F600C82417 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +164,7 @@
 				D645F35425B1B6F600C82417 /* ViewController.swift in Sources */,
 				D645F35025B1B6F600C82417 /* AppDelegate.swift in Sources */,
 				D645F35225B1B6F600C82417 /* SceneDelegate.swift in Sources */,
+				D645F36525B1B74000C82417 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
